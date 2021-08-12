@@ -1,4 +1,4 @@
-package com.hsbc.inheritance;
+package com.hsbc.layered;
 
 
 public class Emp {
@@ -9,15 +9,32 @@ public class Emp {
 		this.empId = empId;
 		this.empName = empName;
 	}
-
+	
 	public Emp() {}
 	
 	public void displayEmpDetails() {
 		System.out.println( "Emp [empId=" + empId + ", empName=" + empName + "]");
 	}
+
+	//incrSal()
+	//promoteEmp()
 	
-	public void m1() {
-		System.out.println("In m1 of Emp");
+	
+	public int getEmpId() {
+		return empId;
 	}
 
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
 }
